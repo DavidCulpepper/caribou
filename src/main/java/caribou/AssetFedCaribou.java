@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class AssetFedCaribou implements Caribou {
-    private static final String MIGRATION_PATH_FORMAT = "db/%s/migrations";
+    private static final String MIGRATION_PATH_FORMAT = "db/%s/migrate";
 
     private final Context context;
     private final String name;
