@@ -48,7 +48,10 @@ public class AssetFedCaribou implements Caribou {
     }
 
     private void createMigrationsTable(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE migrations (_id INTEGER PRIMARY KEY AUTOINCREMENT, migration TEXT, has_run INTEGER)");
+        db.execSQL("CREATE TABLE migrations ("
+                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "migration TEXT, "
+                + "has_run INTEGER)");
     }
 
     private void insertMigrationsIntoTable(SQLiteDatabase db) throws IOException {
